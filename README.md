@@ -4,7 +4,7 @@
 社群媒體資料分析實務作業一  
 預測node pair(node1,node2)是否存在隱藏關聯(hiddenedge)  
 training dataset有約32000條的edges。  
-資料集是一個「有向網路」，因此每組nodepair代表一條具有方向性的邊  
+training dataset是一個「有向網路」，因此每組nodepair代表一條具有方向性的邊  
 例如(29237,16563, 1) 代表節點29237指向節點16563有邊，(32869, 24548, 0) 代表節點32869指向節點24548沒有邊。
 
 ## Link Prediction 詳細演算法流程與實現:  
@@ -15,4 +15,4 @@ training dataset有約32000條的edges。
 我另外分出了資料的一部分來做accuracy測試，避免kaggle的提交次數用完。  
 
 ## 如何跑我的檔案:  
-請將三個csv檔案和py檔放在同一個folder，再run py檔即可得到答案  
+請將三個csv檔案(train.csv, test.csv, sample_submission.csv和py檔放在同一個folder，再run py檔即可得到答案)
