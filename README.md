@@ -2,9 +2,10 @@
 
 ## 程式目的:
 社群媒體資料分析實務作業一  
-預測node pair(node1,node2)是否存在隱藏關聯(hiddenedge)
-training dataset有約32000條的edges  
-資料集是一個「有向網路」，因此每組nodepair代表一條具有方向性的邊，例如(29237,16563, 1) 代表節點29237指向節點16563有邊，(32869, 24548, 0) 代表節點32869指向節點24548沒有邊。
+預測node pair(node1,node2)是否存在隱藏關聯(hiddenedge)  
+training dataset有約32000條的edges。  
+資料集是一個「有向網路」，因此每組nodepair代表一條具有方向性的邊  
+例如(29237,16563, 1) 代表節點29237指向節點16563有邊，(32869, 24548, 0) 代表節點32869指向節點24548沒有邊。
 
 ## Link Prediction 詳細演算法流程與實現:  
 我選擇用networkx套件建立graph，並且是將train和test的node一起放進graph，才不會發生test的node不在graph裡的情況。  
